@@ -1,13 +1,14 @@
-package com.christli.helloworld;
+package com.christli.studyweb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HelloworldApplication {
+public class StudyWebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloworldApplication.class, args);
+        SpringApplication.run(StudyWebApplication.class, args);
     }
+
 
 }

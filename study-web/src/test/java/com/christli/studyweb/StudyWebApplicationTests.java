@@ -1,10 +1,10 @@
-package com.christli.helloworld;
+package com.christli.studyweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HelloworldApplicationTests {
+class StudyWebApplicationTests {
 
     @Test
     void contextLoads() {

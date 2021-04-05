@@ -10,8 +10,16 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>helloworld</module>
-        <module>web</module>
+        <module>study-web</module>
     </modules>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.4.4</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
