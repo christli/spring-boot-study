@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -89,7 +90,7 @@ public class ApiController {
      */
     @PostMapping("/users")
     @ResponseStatus(HttpStatus.CREATED)
-    public Object addUser(@RequestBody UserDao user) {
+    public Object addUser(@Valid @RequestBody UserDao user) {
 
         List<UserDao> list = getData();
         list.add(user);//模拟向列表中增加数据
@@ -118,16 +119,16 @@ public class ApiController {
      * 删除一个用户对象
      * 幂等性
      * 返回 HttpStatus.NO_CONTENT 表示无返回内容
-     * */
+     */
     @DeleteMapping("/users/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteUser(@PathVariable("id") String id){
-        List<UserDao> list= getData();
-        UserDao userDao=null;
-        for (UserDao user:list) {
-            if(id.equals(user.getUserId().toString())){
+    public void deleteUser(@PathVariable("id") String id) {
+        List<UserDao> list = getData();
+        UserDao userDao = null;
+        for (UserDao user : list) {
+            if (id.equals(user.getUserId().toString())) {
                 //删除用户
-                userDao=user;
+                userDao = user;
                 break;
             }
         }

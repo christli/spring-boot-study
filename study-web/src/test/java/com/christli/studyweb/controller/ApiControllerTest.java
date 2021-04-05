@@ -39,7 +39,7 @@ class ApiControllerTest {
     @Test
     void addUser() throws Exception {
         MvcResult result = mvc.perform(MockMvcRequestBuilders.post("/api/user/users")
-                .contentType(MediaType.APPLICATION_JSON).content("{ \"userId\": 3,\"userName\": \"tom\"}"))
+                .contentType(MediaType.APPLICATION_JSON).content("{ \"userId\": 3,\"age\": 3,\"userName\": \"tom\"}"))
                 .andReturn();
         Assertions.assertEquals(HttpStatus.CREATED.value(), result.getResponse().getStatus());
     }
