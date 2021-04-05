@@ -35,4 +35,13 @@ public class UserDao {
     public void setUserName(String userName) {
         this.userName = userName;
     }
+
+    public UserDao() {
+    }
+
+    public UserDao(Integer userId, Integer age, String userName) {
+        this.userId = userId;
+        this.age = age;
+        this.userName = userName;
+    }
 }
