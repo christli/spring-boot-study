@@ -1,5 +1,6 @@
-package com.christli.studyweb.interceptor;
+package com.christli.studyweb.configuration;
 
+import com.christli.studyweb.interceptor.MyHttpInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;

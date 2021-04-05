@@ -4,4 +4,5 @@
 - 单元测试@AutoConfigureMockMvc，MockMvc的用法
 - @ControllerAdvice,@RestControllerAdvice实现全局异常处理，显示错误页面，必须引入 thymeleaf 组件
 - @Valid 相关注解
-- 拦截器：HandlerInterceptor接口 和 WebMvcConfigurationSupport
+- 拦截器：`HandlerInterceptor`接口 和 `WebMvcConfigurationSupport`
+- 两种tomcat自定义配置用法，`.yml` 和 `ConfigurableServletWebServerFactory`,两种可以共同存在
