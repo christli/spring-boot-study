@@ -11,6 +11,7 @@
 
     <modules>
         <module>study-web</module>
+        <module>study-jdbctemplate</module>
     </modules>
 
     <build>
