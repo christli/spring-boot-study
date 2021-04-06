@@ -3,16 +3,13 @@
 - 本项目按功能分类，每个功能点独立一个模块，独立运行，也方便组合。
 ---
 ### web开发
-- [ ] controller
-- [ ] 全局异常处理
+- [x] controller
+- [x] 全局异常处理
+- [x] 拦截器
+- [x] tomcat
+- [x] valid
+- [x] thymeleaf
 - [ ] swagger2生成接口文档
-- [ ] 拦截器
-- [ ] tomcat
-- [ ] api-protect
-- [ ] valid
-- [ ] thymeleaf
-- [ ] freemarker
-- [ ] webflux
 ### 数据访问
 - [ ] JdbcTemplate
 - [ ] mybatis
