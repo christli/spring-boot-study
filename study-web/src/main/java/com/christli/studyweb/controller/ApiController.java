@@ -1,6 +1,6 @@
 package com.christli.studyweb.controller;
 
-import com.christli.studyweb.dao.UserDao;
+import com.christli.studyweb.entity.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,28 +19,28 @@ public class ApiController {
     /**
      * 模拟一组数据
      */
-    private List<UserDao> getData() {
-        List<UserDao> list = new ArrayList<>();
+    private List<User> getData() {
+        List<User> list = new ArrayList<>();
 
-        UserDao userDao = new UserDao();
-        userDao.setUserId(1);
-        userDao.setUserName("admin");
-        list.add(userDao);
+        User user = new User();
+        user.setUserId(1);
+        user.setUserName("admin");
+        list.add(user);
 
-        userDao = new UserDao();
-        userDao.setUserId(2);
-        userDao.setUserName("heike");
-        list.add(userDao);
+        user = new User();
+        user.setUserId(2);
+        user.setUserName("heike");
+        list.add(user);
 
-        userDao = new UserDao();
-        userDao.setUserId(3);
-        userDao.setUserName("tom");
-        list.add(userDao);
+        user = new User();
+        user.setUserId(3);
+        user.setUserName("tom");
+        list.add(user);
 
-        userDao = new UserDao();
-        userDao.setUserId(4);
-        userDao.setUserName("mac");
-        list.add(userDao);
+        user = new User();
+        user.setUserId(4);
+        user.setUserName("mac");
+        list.add(user);
 
         return list;
     }
@@ -53,7 +53,7 @@ public class ApiController {
     @GetMapping("/users")
     @ResponseStatus(HttpStatus.OK)
     public Object getUsers() {
-        List<UserDao> list = new ArrayList<>();
+        List<User> list = new ArrayList<>();
 
         list = getData();
 
@@ -72,9 +72,9 @@ public class ApiController {
             return null;
         }
 
-        List<UserDao> list = getData();
-        UserDao userDao = null;
-        for (UserDao user : list) {
+        List<User> list = getData();
+        User userDao = null;
+        for (User user : list) {
             if (id.equals(user.getUserId().toString())) {
                 userDao = user;
                 break;
@@ -90,9 +90,9 @@ public class ApiController {
      */
     @PostMapping("/users")
     @ResponseStatus(HttpStatus.CREATED)
-    public Object addUser(@Valid @RequestBody UserDao user) {
+    public Object addUser(@Valid @RequestBody User user) {
 
-        List<UserDao> list = getData();
+        List<User> list = getData();
         list.add(user);//模拟向列表中增加数据
         return user;
     }
@@ -103,11 +103,11 @@ public class ApiController {
      */
     @PutMapping("/users/{id}")
     @ResponseStatus(HttpStatus.CREATED)
-    public Object editUser(@PathVariable("id") String id, @RequestBody UserDao user) {
-        List<UserDao> list = getData();
-        for (UserDao userDao1 : list) {
-            if (id.equals(userDao1.getUserId().toString())) {
-                userDao1 = user;
+    public Object editUser(@PathVariable("id") String id, @RequestBody User user) {
+        List<User> list = getData();
+        for (User user1 : list) {
+            if (id.equals(user1.getUserId().toString())) {
+                user1 = user;
                 break;
             }
         }
@@ -123,9 +123,9 @@ public class ApiController {
     @DeleteMapping("/users/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteUser(@PathVariable("id") String id) {
-        List<UserDao> list = getData();
-        UserDao userDao = null;
-        for (UserDao user : list) {
+        List<User> list = getData();
+        User userDao = null;
+        for (User user : list) {
             if (id.equals(user.getUserId().toString())) {
                 //删除用户
                 userDao = user;

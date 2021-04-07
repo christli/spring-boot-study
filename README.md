@@ -9,10 +9,10 @@
 - [x] tomcat
 - [x] valid
 - [x] thymeleaf
-- [ ] swagger2生成接口文档
+- [x] swagger2生成接口文档
 ### 数据访问
-- [ ] JdbcTemplate
-- [ ] mybatis
+- [x] JdbcTemplate
+- [x] mybatis
 - [ ] mybatis-plus
 - [ ] Jpa
 - [ ] 多数据源动态切换，hikari

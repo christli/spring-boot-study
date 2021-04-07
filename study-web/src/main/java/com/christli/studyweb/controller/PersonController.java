@@ -1,6 +1,6 @@
 package com.christli.studyweb.controller;
 
-import com.christli.studyweb.dao.Person;
+import com.christli.studyweb.entity.Person;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

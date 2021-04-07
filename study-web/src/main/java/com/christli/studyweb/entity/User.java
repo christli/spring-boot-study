@@ -1,10 +1,10 @@
-package com.christli.studyweb.dao;
+package com.christli.studyweb.entity;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-public class UserDao {
+public class User {
     private Integer userId;
     @NotNull(message = "年龄不能为空")
     @Max(message = "年龄不能超过120岁", value = 120)
@@ -36,10 +36,10 @@ public class UserDao {
         this.userName = userName;
     }
 
-    public UserDao() {
+    public User() {
     }
 
-    public UserDao(Integer userId, Integer age, String userName) {
+    public User(Integer userId, Integer age, String userName) {
         this.userId = userId;
         this.age = age;
         this.userName = userName;

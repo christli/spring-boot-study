@@ -1,4 +1,4 @@
-package com.christli.studyweb.dao;
+package com.christli.studyweb.entity;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
