@@ -17,3 +17,8 @@ array-configs:
       desc: spring-common-operation-01
     - name: christli02
       desc: spring-common-operation-02
+
+spring:
+  web:
+    resources:
+      static-locations: classpath:/templates/
