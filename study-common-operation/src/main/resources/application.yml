@@ -1,0 +1,19 @@
+## port
+server:
+  port: 8181
+
+config:
+  name: christli
+  desc: spring-common-operation
+
+configs:
+  config:
+    name: christli00
+    desc: spring-common-operation-00
+
+array-configs:
+  configs:
+    - name: christli01
+      desc: spring-common-operation-01
+    - name: christli02
+      desc: spring-common-operation-02
