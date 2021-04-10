@@ -22,3 +22,13 @@ spring:
   web:
     resources:
       static-locations: classpath:/templates/
+##mail
+  mail:
+    host: smtp.163.com
+    username: libinbin_christ@163.com
+    password: xxxxx
+    default-encoding: UTF-8
+
+mail:
+  fromMail:
+    addr: libinbin_christ@163.com
