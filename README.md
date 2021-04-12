@@ -13,17 +13,24 @@
 ### 数据访问
 - [x] JdbcTemplate
 - [x] mybatis
-- [ ] mybatis-plus
-- [ ] Jpa
-- [ ] 多数据源动态切换，hikari
-- [ ] druid
-- [ ] mongodb
-- [ ] transactional
-- [ ] sql2dictionary
+- [x] mybatis-plus
+- [x] Jpa
+- [x] 多数据源动态切换，hikari
+- [x] druid
+- [x] mongodb
+- [x] transactional
+### 常用操作
+- [x] 读取配置文件的多种方式
+- [x] 实现多文件上传
+- [x] 邮件发送
+- [x] 操作Excel
+- [x] 使用Dom4j XStream操作Xml
+### 常用业务
+- [x] crawler
 ### 缓存
-- [ ] ehcache
-- [ ] redis
-- [ ] memcache
+- [x] redis
+- [x] memcached
+- [x] ehcache
 ### 日志
 - [ ] logback生产日志
 - [ ] aop记录操作日志
@@ -53,16 +60,3 @@
 - [ ] distributed-id
 - [ ] distributed-lock
 - [ ] netty-protobuf
-### 常用操作
-- [ ] 读取配置文件的多种方式
-- [ ] 实现多文件上传
-- [ ] FTP上传和下载
-- [ ] 邮件发送
-- [ ] 操作Excel
-- [ ] 使用Dom4j XStream操作Xml
-- [ ] 使用HTTPClient进行GET/POST/PUT/DELETE
-- [ ] 自动测试
-### 常用业务
-- [ ] wechat-pay
-- [ ] alipay
-- [ ] crawler
