@@ -9,10 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <modules>
-        <module>study-web</module>
-        <module>study-jdbctemplate</module>
-    </modules>
+<!--    <modules>-->
+<!--        <module>study-web</module>-->
+<!--        <module>study-jdbctemplate</module>-->
+<!--    </modules>-->
 
     <build>
         <plugins>
