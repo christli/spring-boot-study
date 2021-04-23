@@ -180,6 +180,8 @@ alter table t_role
     convert to character set utf8;
 ````
 
+> - 更多用户相关的，可以参考 [花式玩 Spring Security ，这样的用户定义方式你可能没见过](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247489436&idx=2&sn=3362bfb59f0982b88cbcfff62169b2aa&chksm=e9c345fcdeb4ccea0bdff2b94a19e4c7aa1edf45ed310c3ca9b23896ab60dd95859befb539a4&scene=178&cur_album_id=1319828555819286528#rd)
+
 ### 角色继承
 
 > 上级可能具备下级的所有权限，如果使用角色继承，这个功能就很好实现，我们只需要在 SecurityConfig 中添加如下代码来配置角色继承关系即可：
@@ -435,4 +437,16 @@ public class RegService {
 > - Spring Security Filter 并不是直接嵌入到 Web Filter 中的，而是通过 `FilterChainProxy` 来统一管理 Spring Security Filter，
 > - `FilterChainProxy` 本身则通过 Spring 提供的 `DelegatingFilterProxy` 代理过滤器嵌入到 Web Filter 之中。
 > - 可以参考 [Spring Security 竟然可以同时存在多个过滤器链？](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247489302&idx=2&sn=032f8ccc6a9955799702d6c2766ca6eb&chksm=e9c34576deb4cc60d1787dbd82ab13ca86665f9a93626004bd35aa3a24b7b5fb34c2e73cf88b&scene=178&cur_album_id=1319828555819286528#rd)
+
+### Spring Security 的源码分析
+
 > - 可以参考 [深入理解 FilterChainProxy【源码篇】](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247489390&idx=2&sn=c42833e530d4d258a236a07deb922229&chksm=e9c3450edeb4cc18ae5e8f3309019112dd08dab8db5d11fc110dff62b554720d1f38eecffcda&scene=178&cur_album_id=1319828555819286528#rd)
+> - 可以参考 [深入理解 SecurityConfigurer 【源码篇】](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247489399&idx=1&sn=a450a7e432cdd0a4e2ee279604984f3a&chksm=e9c34517deb4cc01559352ac96d23fa2a20fcc7ec5d876312728a6ace181146296e30c4f92e7&scene=178&cur_album_id=1319828555819286528#rd)
+> - 可以参考 [深入理解 HttpSecurity【源码篇】](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247489405&idx=2&sn=b7790a660b787eec6d7604409aec41c3&chksm=e9c3451ddeb4cc0bfbab2050a00e1891087da6d1e1b55739523d356c50cfed2cc3aaa38618bc&scene=178&cur_album_id=1319828555819286528#rd)
+> - 可以参考 [深入理解 AuthenticationManagerBuilder 【源码篇】](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247489418&idx=1&sn=e41628d258fcd0b2d00fb291fa0cfdef&chksm=e9c345eadeb4ccfc968308a6dcc557eb724d8ef2a11ff69dcda161aaa8a03c40acc5f06f8531&scene=178&cur_album_id=1319828555819286528#rd)
+> - 可以参考 [深入理解 WebSecurityConfigurerAdapter【源码篇】](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247489454&idx=1&sn=402b2db292558c59cbce60b3de568e10&chksm=e9c345cedeb4ccd8501fa9da53e9f8c8dba8c8aa3d8273c3805fa09b8529c0a82b2b886a4046&scene=178&cur_album_id=1319828555819286528#rd)
+> - 可以参考 [盘点 Spring Security 框架中的八大经典设计模式](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247489462&idx=2&sn=90f1d627cc704264623abd1efb4fb79c&chksm=e9c345d6deb4ccc05e20adc7c4a47577db7e02f8fdb8cdf13f0895e1158c803474495b2a7c9b&scene=178&cur_album_id=1319828555819286528#rd) 
+> - 可以参考 [Spring Security 初始化流程梳理](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247489550&idx=2&sn=04dce0b8681e4e9a955a7615ae955828&chksm=e9c34a6edeb4c378057df37c96ada6371831cef140c01c61bf3f56371ac39da1276ea9a1fbbd&scene=178&cur_album_id=1319828555819286528#rd)
+
+### 权限管理
+> - 可以参考 [Spring Security 中如何细化权限粒度？](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247490109&idx=1&sn=b94d1e156152a8fb50855d2fa660bb5a&chksm=e9c3485ddeb4c14b058ab550ff9e37eaddf17c541ce945ec933dd71ad52f833683283019ef11&scene=178&cur_album_id=1319828555819286528#rd)
