@@ -32,31 +32,20 @@
 - [x] memcached
 - [x] ehcache
 ### 日志
-- [ ] logback生产日志
-- [ ] aop记录操作日志
-- [ ] ELK实时日志收集系统-ElasticSearch+LogStash+Kibana
+- [x] logback生产日志
+- [x] aop记录操作日志
+- [x] ELK实时日志收集系统-ElasticSearch+LogStash+Kibana
 ### 消息
-- [ ] RabbitMq
-- [ ] Kafka
-- [ ] RocketMq
+- [x] RabbitMq
+- [x] Kafka
+- [x] RocketMq
 ### 搜索
-- [ ] Lucene
-- [ ] ElasticSearch-https://github.com/abel533/SearchEngine
+- [x] ElasticSearch
 ### 安全
-- [ ] springSecurity-https://github.com/eacdy/light-security
-- [ ] Shiro-https://github.com/eacdy/Shiro-SpringBoot
-- [ ] Oauth2+Token
-- [ ] Oauth2+JWT
+- [x] springSecurity
 ### 监控
-- [ ] Actuator监控应用
-- [ ] Admin监控服务
-- [ ] prometheus 监控项目
+- [x] Actuator监控应用
+- [x] Admin监控服务
 ### 任务
-- [ ] springTask实现简单定时任务
-- [ ] Quartz动态实现定时任务
-### 分布式
-- [ ] docker
-- [ ] dubbo-provider
-- [ ] distributed-id
-- [ ] distributed-lock
-- [ ] netty-protobuf
+- [x] springTask实现简单定时任务
+- [x] Quartz动态实现定时任务

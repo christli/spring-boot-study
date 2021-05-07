@@ -1,0 +1,19 @@
+management:
+  endpoint:
+    # 开启shutdown端点
+    shutdown:
+      enabled: true
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+#        include: health,info,metrics,env,beans
+        include: "*"
+
+spring:
+  boot:
+    admin:
+      client:
+        # 服务端地址
+        url: http://localhost:8181
